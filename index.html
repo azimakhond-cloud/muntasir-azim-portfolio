@@ -481,6 +481,48 @@
       .brand-mark svg{width:31px !important;height:31px !important}
     }
 
+  
+:root{color-scheme:dark;--bg:#0a1118;--panel:#111e2b;--panel2:#182b3b;--text:#f4f7fc;--muted:#a9b7c8;--accent:#a9b9ff;--line:rgba(194,211,255,.14);--glow:rgba(129,151,255,.16)}
+body{background:radial-gradient(ellipse at 82% 7%,rgba(91,111,191,.18),transparent 34%),radial-gradient(ellipse at 4% 48%,rgba(54,119,142,.11),transparent 30%),var(--bg);transition:background .35s,color .35s}
+.site-header{background:rgba(8,15,24,.82);border-color:var(--line)}
+.eyebrow,.nav-links a:hover,.nav-links a.active,.card li:before,.check-list li:before,.project-info small,.stars{color:var(--accent)}
+.btn-primary{background:linear-gradient(120deg,#c6d0ff,#8da2ff);color:#10172a;box-shadow:0 9px 28px rgba(129,151,255,.17)}
+.btn-primary:hover{box-shadow:0 14px 38px rgba(129,151,255,.28)}
+.hero h1 span{background:linear-gradient(100deg,#dce2ff,#a9b9ff 55%,#7e9dce);-webkit-background-clip:text;background-clip:text;color:transparent}
+.portrait-wrap{background:linear-gradient(145deg,#24354d,#101d2b);border-color:rgba(169,185,255,.24)}
+.portrait-wrap:before,.portrait-wrap:after{border-color:rgba(169,185,255,.25)}
+.float-tag,.floating-icon{border-color:rgba(169,185,255,.25)}
+.card:hover,.skill-card:hover,.reason:hover,.quote:hover,.project:hover{border-color:rgba(169,185,255,.48)}
+.card-icon{background:rgba(169,185,255,.12);color:var(--accent)}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:var(--text);font:600 .82rem "Plus Jakarta Sans",sans-serif;cursor:pointer;transition:.25s}
+.theme-toggle:hover{transform:translateY(-2px);border-color:var(--accent);background:var(--glow)}
+.theme-icon{font-size:1.05rem;line-height:1}
+body[data-theme="light"]{color-scheme:light;--bg:#f3f5fb;--panel:#fff;--panel2:#edf1fa;--text:#182338;--muted:#5e6b80;--accent:#5368c9;--line:rgba(35,54,91,.14);--glow:rgba(83,104,201,.1);background:radial-gradient(ellipse at 82% 7%,rgba(140,157,232,.19),transparent 35%),radial-gradient(ellipse at 4% 48%,rgba(105,179,188,.12),transparent 30%),var(--bg)}
+body[data-theme="light"] .site-header{background:rgba(248,250,255,.86);box-shadow:0 8px 35px rgba(31,48,83,.08)}
+body[data-theme="light"] .nav-links{color:#33415a}
+body[data-theme="light"] .nav-links a{background:rgba(255,255,255,.72);border-color:rgba(35,54,91,.1);box-shadow:0 7px 22px rgba(31,48,83,.06)}
+body[data-theme="light"] .nav-links a:hover,body[data-theme="light"] .nav-links a.active{background:rgba(83,104,201,.09);border-color:rgba(83,104,201,.32)}
+body[data-theme="light"] .btn-outline{color:var(--text);border-color:rgba(35,54,91,.2);background:rgba(255,255,255,.5)}
+body[data-theme="light"] .portrait-wrap{background:linear-gradient(145deg,#e0e7fa,#cbd7ed);box-shadow:0 25px 70px rgba(47,66,112,.12)}
+body[data-theme="light"] .portrait-wrap:before,body[data-theme="light"] .portrait-wrap:after{border-color:rgba(83,104,201,.22)}
+body[data-theme="light"] .float-tag,body[data-theme="light"] .floating-icon{background:rgba(255,255,255,.88);color:#465bb9;border-color:rgba(83,104,201,.2);box-shadow:0 10px 30px rgba(35,54,91,.12)}
+body[data-theme="light"] .about-mark,body[data-theme="light"] .stat,body[data-theme="light"] .card,body[data-theme="light"] .skill-card,body[data-theme="light"] .project,body[data-theme="light"] .reason,body[data-theme="light"] .quote,body[data-theme="light"] .contact-panel{background:linear-gradient(145deg,#fff,#f7f8fd);border-color:rgba(35,54,91,.11);box-shadow:0 16px 45px rgba(35,54,91,.055)}
+body[data-theme="light"] .skill-tags span{color:#35425a;background:#f0f2fa;border-color:rgba(35,54,91,.1)}
+body[data-theme="light"] .field label{color:#35425a}
+body[data-theme="light"] .field input,body[data-theme="light"] .field textarea{background:#fff;color:#182338;border-color:rgba(35,54,91,.17)}
+body[data-theme="light"] .site-footer{background:rgba(255,255,255,.48);border-color:var(--line)}
+body[data-theme="light"] .nav-links{background:rgba(248,250,255,.98)}
+body[data-theme="light"] .menu-toggle{color:#182338;border-color:var(--line)}
+body[data-theme="light"] .theme-toggle{background:#fff;color:#26334c}
+.floating-icons{pointer-events:none}
+.floating-icon{font-size:.76rem;letter-spacing:-.04em;font-weight:800}
+.floating-icon:nth-child(1){color:#8fb2ff}.floating-icon:nth-child(2){color:#b3a0ff}.floating-icon:nth-child(3){color:#a9b9ff}
+.nav-links li{animation:menuFloat 5.5s ease-in-out infinite}
+@keyframes menuFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@media(max-width:900px){.theme-toggle{margin-left:auto}.nav{gap:12px}}
+@media(max-width:680px){.theme-toggle{position:absolute;right:66px;padding:9px 11px}.theme-label{display:none}.nav{position:relative}.nav-links{background:rgba(8,15,24,.98)}}
+@media(prefers-reduced-motion:reduce){.nav-links li{animation:none}}
+
   </style>
 
   <style id="premium-polish">
@@ -532,6 +574,7 @@
       <li><a href="#skills">Skills</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li>
     </ul>
     <a class="btn btn-primary nav-cta" href="#contact">Let's Talk ↗</a>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Toggle light/dark mode"><span class="theme-icon">☼</span><span class="theme-label">Light</span></button>
   </nav>
 </header>
 
@@ -669,6 +712,28 @@
 </div></footer>
 
 <script>
+
+  const themeButton = document.getElementById('themeToggle');
+  const themeIcon = themeButton.querySelector('.theme-icon');
+  const themeLabel = themeButton.querySelector('.theme-label');
+  const savedTheme = localStorage.getItem('muntasir-portfolio-theme');
+  const initialTheme = savedTheme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  document.body.dataset.theme = initialTheme;
+  function syncThemeButton(){
+    const isLight = document.body.dataset.theme === 'light';
+    themeIcon.textContent = isLight ? '☾' : '☼';
+    themeLabel.textContent = isLight ? 'Dark' : 'Light';
+    themeButton.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+    themeButton.title = isLight ? 'Switch to dark mode' : 'Switch to light mode';
+  }
+  syncThemeButton();
+  themeButton.addEventListener('click',()=>{
+    const next = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+    document.body.dataset.theme = next;
+    localStorage.setItem('muntasir-portfolio-theme',next);
+    syncThemeButton();
+  });
+
   const toggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
   toggle.addEventListener('click', () => {
